@@ -1,0 +1,55 @@
+En resumen, lo que hemos hecho es crear una aplicación web de registro de ciudadanos 
+que consta de un backend en Java y un frontend en React. A continuación, se detallan los pasos que hemos seguido:
+
+Creación del backend:
+
+- Primero, creamos un proyecto de Maven con Spring Initializr y agregamos 
+las dependencias necesarias para trabajar con Spring Boot, Spring Data JPA, H2 Database y Spring Web.
+
+- Luego, definimos nuestras entidades utilizando anotaciones de JPA, como @Entity, @Table y @Id, para mapear nuestras
+ clases Java con las tablas de nuestra base de datos.
+
+- A continuación, creamos nuestros repositorios, que son interfaces que extienden de 
+JpaRepository y que nos proporcionan métodos predefinidos para realizar operaciones CRUD
+ (crear, leer, actualizar y eliminar) en la base de datos.
+
+- A continuación, creamos nuestros controladores, que son clases Java anotadas con
+ @RestController que manejan las solicitudes HTTP entrantes. En estos controladores 
+definimos los endpoints de nuestra API REST, que están relacionados con nuestras entidades.
+
+- Finalmente, creamos un archivo application.properties para configurar nuestra aplicación, 
+donde definimos la conexión a nuestra base de datos y la configuración de nuestras entidades.
+
+NOTA: Actualmente poseo experiencia en java pero puedo reforzar sintaxis en .NET y trabajar si es necesario! !Me encantaria!
+EL Backend corre por el PORT: 8082
+
+
+Creación del frontend:
+
+- Creamos un proyecto de React con create-vite-app.
+
+- Creamos un componente llamado CiudadanoForm en el que definimos un formulario 
+para que los usuarios ingresen información sobre los ciudadanos.
+
+- Utilizamos la biblioteca axios para enviar solicitudes HTTP al backend y recibir respuestas.
+
+- Utilizamos hooks de React, como useState, para manejar el estado del formulario y controlar los cambios en los campos de entrada.
+
+- Finalmente, definimos una función handleSubmit que maneja la presentación del formulario, realiza una
+ solicitud POST al backend utilizando axios y agrega un nuevo ciudadano a la lista de ciudadanos en nuestro frontend.
+
+
+ Integración del backend y el frontend:
+
+- Configuramos CORS en el backend para permitir que el frontend pueda acceder al backend.
+- Conectamos el frontend al backend mediante peticiones HTTP para agregar y listar ciudadanos.
+
+
+En resumen, hemos creado una aplicación web de registro de ciudadanos que utiliza un backend en Java y un frontend en React, que se 
+comunican a través de peticiones HTTP.
+
+NOTAS:
+- Se uso base de datos H2 en memoria dado al manejo del tiempo, sin embargo contaba con el manejo de SQL server y MYsql.
+- Faltaron items a implementar por cuestion de tiempo.
+
+MUCHAS GRACIAS POR LA OPORTUNIDAD DE ENFRENTARME A ESTE RETO, ME ENCANTARIA FORMAR PARTE DE HELPPEOPLE =)
